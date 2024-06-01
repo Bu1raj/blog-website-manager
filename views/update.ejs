@@ -1,0 +1,9 @@
+<%- include("partials/header.ejs") %>
+<div class="update-page-container">
+    <h1><%= title %></h1>
+    <% let url = `/blogs/update-blog/${title}` %>
+    <form action="<%= url %>" method="POST">
+        <br><textarea rows="5" cols="60" name="updatedBlog" id="blog-content"><%= content %></textarea><br>
+        <input type="submit" value="Update" id="update-button">
+    </form>
+</div>

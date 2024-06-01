@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+<div class="home-page-container">
+    <section id="home-page-heading">
+        <h1>All Blogs</h1>
+    </section>
+    
+    <div class="list-container">
+        <% if(locals.blogTitles) { %>
+            <ul>
+                <% for(let i = 0; i < blogTitles.length; i++) { %>
+                    <li><a href="blogs/<%= encodeURIComponent(blogTitles[i]) %>"><%= blogTitles[i] %></a></li>
+                <% } %>
+            </ul>
+        <% } else { %>
+            <h3>Oops bro nothing there</h3>
+        <% } %>
+    </div>
+
+    <form action="/create-blog" method="GET">
+        <input type="submit" value="Create a blog">
+    </form>
+</div>
+
+<!-- <img src="/svgs/pen-fill.svg" id="list-icon"> -->
+
+
+

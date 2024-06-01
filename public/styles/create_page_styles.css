@@ -1,0 +1,53 @@
+.create-page-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.create-page-container form{
+    width: 50%; 
+    text-align: center;
+}
+
+#title-of-blog{
+    font-family: serif;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+#blog-content{
+    padding: 10px;
+    font-family: serif;
+    font-size: medium;
+    width: 100%;
+    font-size: 1rem ;
+    height: 400px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+#blog-content::placeholder{
+    font-family: sans-serif;
+    position: relative;
+    top: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+#publish-button{
+    background-color: black;
+    width: 50%;
+    height: 45px;
+    font-size: 1.5rem;
+    font-family: "Marcellus", serif;
+    color: white;
+    border: none;
+}
+
+#publish-button:hover{
+    background-color: rgb(40, 40, 40);
+}

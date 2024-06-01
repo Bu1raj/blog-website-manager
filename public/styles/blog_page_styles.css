@@ -1,0 +1,43 @@
+.blog-page-container{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-page-container h1{
+    margin-bottom: 0px;
+}
+
+#blog-container{
+    padding: 10px;
+    font-family: serif;
+    font-size: medium;
+    width: 100%;
+    font-size: 1rem ;
+    height: 400px;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.blog-page-container form{
+    width: 100%;
+    text-align: center;
+}
+
+.blog-page-container form input{
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 50px;
+    font-size: 1.3rem;
+    padding: 10px;
+    border: none;
+    font-family: "Marcellus", serif;
+}
+
+.blog-page-container form input:hover{
+    opacity: 0.7;
+}

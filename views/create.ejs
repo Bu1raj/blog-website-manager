@@ -1,0 +1,9 @@
+<%- include("partials/header.ejs") %>
+<div class="create-page-container">
+    <h1>Create a blog</h1>
+    <form action="/submit-blog" method="POST">
+        <input type="text" placeholder="Title of your blog" name="titleOfBlog" id="title-of-blog" autocomplete="off" />
+        <br><textarea rows="5" cols="60" name="contentOfBlog" placeholder="Write your blog here" id="blog-content"></textarea><br>
+        <input type="submit" value="Publish" id="publish-button">
+    </form>
+</div>
